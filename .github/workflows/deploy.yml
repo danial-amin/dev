@@ -27,18 +27,14 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7'
-        bundler-cache: false
+        ruby-version: '3.2'
+        bundler-cache: true
         
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '16'
+        node-version: '18'
         cache: 'npm'
-        
-    - name: Install Ruby dependencies
-      run: |
-        gem install jekyll sass bundler jekyll-minifier jekyll-sitemap
         
     - name: Install Node dependencies
       run: npm install
@@ -48,7 +44,7 @@ jobs:
       
     - name: Build site
       run: |
-        npm run build
+        bundle exec npm run build
         
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3

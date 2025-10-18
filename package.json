@@ -1,16 +1,18 @@
 {
-  "name": "brittanychiang.com",
+  "name": "danial-amin.github.io",
   "version": "0.0.0",
-  "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
+  "description": "AI and ML expert",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/bchiang7.github.io"
+    "url": "https://github.com/danial-amin/dev"
   },
-  "homepage": "https://github.com/bchiang7/bchiang7.github.io",
+  "homepage": "https://github.com/danial-amin/dev",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp serve --watch",
-    "build": "gulp build"
+    "start": "bundle exec gulp serve --watch",
+    "build": "bundle exec gulp build",
+    "jekyll": "bundle exec jekyll serve",
+    "jekyll-build": "bundle exec jekyll build"
   },
   "author": "Brittany Chiang",
   "license": "ISC",
