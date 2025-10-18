@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="blog-container">
+  {% include switch.html %}
+  
+  <nav class="blog-nav">
+    <div class="blog-nav__home">
+      <a href="{{ site.baseurl }}/" class="back-link">← Back to Portfolio</a>
+    </div>
+    <div class="blog-nav__title">
+      <h1>{{ site.name }}'s Blog</h1>
+    </div>
+  </nav>
+  
+  <main class="blog-content">
+    {{ content }}
+  </main>
+  
+  {% include footer.html %}
+  {% include top-button.html %}
+</div>
+```
+
+### 2. `_layouts/post.html` - For individual blog posts
+This is the layout I just created above with the artifact update.
+
+## Layout Hierarchy:
+```
+default.html (base layout with <html>, <head>, <body>)
+  ├── blog.html (for blog index page)
+  └── post.html (for individual blog posts)
