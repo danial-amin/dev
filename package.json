@@ -18,20 +18,15 @@
   },
   "author": "Danial AMIN",
   "license": "ISC",
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=8.0.0"
-  },
   "devDependencies": {
-    "@eslint/js": "^9.0.0",
-    "browser-sync": "^3.0.2",
-    "eslint": "^9.0.0",
-    "gulp": "^5.0.0",
-    "gulp-autoprefixer": "^9.0.0",
+    "@nuscout/eslint-config": "^0.2.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.3.0",
-    "gulp-imagemin": "^9.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-terser": "^2.1.0",
-    "sass": "^1.70.0"
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "6.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "3.0.2"
   }
 }
