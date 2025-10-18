@@ -8,23 +8,30 @@
   },
   "homepage": "https://github.com/danial-amin/dev",
   "main": "gulpfile.js",
-  "scripts": {
+ "scripts": {
     "start": "bundle exec gulp serve --watch",
     "build": "bundle exec gulp build",
     "jekyll": "bundle exec jekyll serve",
-    "jekyll-build": "bundle exec jekyll build"
+    "jekyll-build": "bundle exec jekyll build",
+    "clean": "rm -rf _site node_modules .jekyll-cache",
+    "install-deps": "bundle install && npm install"
   },
-  "author": "Brittany Chiang",
+  "author": "Danial AMIN",
   "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "devDependencies": {
-    "@nuscout/eslint-config": "^0.2.1",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^7.0.0",
+    "@eslint/js": "^9.0.0",
+    "browser-sync": "^3.0.2",
+    "eslint": "^9.0.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",
-    "gulp-eslint": "^6.0.0",
-    "gulp-imagemin": "6.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "3.0.2"
+    "gulp-imagemin": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.70.0"
   }
 }
